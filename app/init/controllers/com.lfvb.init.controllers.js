@@ -1,14 +1,22 @@
 (function(){
     'use strict';
 
+
+
     angular.module("com.lfvb.init.controllers",[])
-            .controller("InitController",InitController);
-    
-    InitController.$inject=['$scope'];
+        .controller("InitController",fInitController);
 
-    function InitController($scope) {
-        $scope.titulo="Lo ha cargado";
+    fInitController.$inject=['$scope'];
 
+    function fInitController($scope) {
+        var self=this;
+        this.titulo="Lo ha cargado";
+
+        init();
+
+        function init() {
+            
+        };
         return this;
     };
 
