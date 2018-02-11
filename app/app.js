@@ -1,4 +1,5 @@
 angular.module("com.lfvb.main",[
-    "app.lfvb.route",
+    "ngMaterial",
+    "app.lfvb.route",    
     "app.lfvb.init"
 ]);

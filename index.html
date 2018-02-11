@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html ng-app="com.lfvb.main">
+<html ng-app="com.lfvb.main" ng-cloak>
     <head>
-        <base href="/"/>
+        <base href="/">
+        <link rel="stylesheet" href="clibs\angular-material\angular.material.min.css">
     </head>
     <body ng-view>
+        <md-toolbar class="md-warm">
+            <div class="md-toolbar-tools">
+                <h2 class="md-flex">Html 5</h2>
+            </div>
+        </md-toolbar>
+        <div ng-view>
 
+        </div>
     </body>
     <script src="clibs\angular\angular.min.js"></script>
     <script src="clibs\angular\angular-route.min.js"></script>
+    <script src="clibs\angular-material\angular.material.min.js"></script>
+    <script src="clibs\angular\angular-animate.min.js"></script>
+    <script src="clibs\angular\angular-aria.min.js"></script>
+    
 
     <!-- carga de modulos -->
     <script src="app\app.js"></script>
+    <script src="app\init\factory\com.lfvb.init.factory.js"></script>
     <script src="app\init\controllers\com.lfvb.init.controllers.js"></script>
     <script src="app\init\com.lfvb.init.js"></script>
 
